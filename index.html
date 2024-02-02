@@ -114,7 +114,10 @@
                     <div class="serviceText">
                         <h3>Consultation and Strategy</h3>
                         <p>
-                            Unlock the full potential of your business with our Consultancy and Strategy services at ProductCraft Solutions. In the ever-evolving landscape of technology, having a clear roadmap and strategic insights is crucial for success. Our seasoned consultants bring a wealth of experience to the table, offering tailored solutions to propel your business forward.
+                            Unlock the full potential of your business with our Consultancy and Strategy services at 
+                            ProductCraft Solutions. In the ever-evolving landscape of technology, having a clear
+                             roadmap and strategic insights is crucial for success. Our seasoned consultants bring 
+                             a wealth of experience to the table, offering tailored solutions to propel your business forward.
                         </p>
                     </div>
                 </div>
@@ -220,68 +223,69 @@
                     Our friendly team would love to hear from you.
                 </p>
                 <!-- contact form -->
-                <form>
-                    <p class="touchFormSug">"<span>*</span>" Indicates Required Fields</p>
-                    <div class="touchInpRow">
-                        <div class="touchSingleInp">
-                            <label for="name">Full Name <span>*</span></label>
-                            <input type="text" name="name" id="name">
-                            <span>First Name</span>
-                            <small class="nameWarn">This Field is Required</small>
-                        </div>
-                        <div class="touchSingleInp">
-                            <input type="text" name="name" id="name2">
-                            <span>Last Name</span>
-                            <small class="name2Warn">This Field is Required</small>
-                        </div>
-                    </div>
-                    <div class="touchInpRow">
-                        <div class="touchSingleInp companyInp">
-                            <label for="company">Company Name</label>
-                            <input type="text" name="name" id="company">
-                        </div>
-                    </div>
-                    <div class="touchInpRow">
-                        <div class="touchSingleInp">
-                            <label for="mail">Email <span>*</span></label>
-                            <input type="text" name="mail" id="mail">
-                            <small class="mailWarn">This Field is Required</small>
-                        </div>
-                        <div class="touchSingleInp">
-                            <label for="phone">Phone number <span>*</span></label>
-                            <input type="text" name="phone" id="phone">
-                            <small class="phoneWarn">This Field is Required</small>
-                        </div>
-                    </div>
-                    <div class="touchInpRow">
-                        <div class="touchInpBig">
-                            <label for="message">Message <span>*</span></label>
-                            <textarea name="message" id="message"></textarea>
-                            <small class="messageWarn">This Field is Required</small>
-                        </div>
-                    </div>
-
-                    <div class="contentMethod">
-                        <p>Preferred Method Of Contact <span>*</span></p>
-                        <div class="methodItemWrap">
-                            <div class="methodItem">
-                                <input type="checkbox" name="method" id="method1">
-                                <label for="method1">Text</label>
-                            </div>
-                            <div class="methodItem">
-                                <input type="checkbox" name="method" id="method2">
-                                <label for="method2">Email</label>
-                            </div>
-                            <div class="methodItem">
-                                <input type="checkbox" name="method" id="method3">
-                                <label for="method3">Phone Call</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--<div class="contentCaptcha"></div> -->
-                    <button class="touchBtn">Send A Message</button>
-                </form>
+                <!-- contact form with Formspree integration -->
+<form action="https://formspree.io/f/mwkdjaad" method="POST">
+    <p class="touchFormSug">"<span>*</span>" Indicates Required Fields</p>
+    <div class="touchInpRow">
+        <div class="touchSingleInp">
+            <label for="name">Full Name <span>*</span></label>
+            <input type="text" name="name" id="name" required>
+            <span>First Name</span>
+            <small class="nameWarn">This Field is Required</small>
+        </div>
+        <div class="touchSingleInp">
+            <input type="text" name="name" id="name2" required>
+            <span>Last Name</span>
+            <small class="name2Warn">This Field is Required</small>
+        </div>
+    </div>
+    <div class="touchInpRow">
+        <div class="touchSingleInp companyInp">
+            <label for="company">Company Name</label>
+            <input type="text" name="company" id="company">
+        </div>
+    </div>
+    <div class="touchInpRow">
+        <div class="touchSingleInp">
+            <label for="mail">Email <span>*</span></label>
+            <input type="email" name="_replyto" id="mail" required>
+            <small class="mailWarn">This Field is Required</small>
+        </div>
+        <div class="touchSingleInp">
+            <label for="phone">Phone number <span>*</span></label>
+            <input type="text" name="phone" id="phone" required>
+            <small class="phoneWarn">This Field is Required</small>
+        </div>
+    </div>
+    <div class="touchInpRow">
+        <div class="touchInpBig">
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message" required></textarea>
+            <small class="messageWarn">This Field is Required</small>
+        </div>
+    </div>
+    <div class="contentMethod">
+        <p>Preferred Method Of Contact <span>*</span></p>
+        <div class="methodItemWrap">
+            <div class="methodItem">
+                <input type="radio" name="method" id="method1" value="text">
+                <label for="method1">Text</label>
+            </div>
+            <div class="methodItem">
+                <input type="radio" name="method" id="method2" value="email">
+                <label for="method2">Email</label>
+            </div>
+            <div class="methodItem">
+                <input type="radio" name="method" id="method3" value="phone call">
+                <label for="method3">Phone Call</label>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="selectedMethod" id="selectedMethod">
+    <button class="touchBtn" type="submit" onclick="captureSelectedMethod()">Send A Message</button>
+</form>
+<!-- contact form ends -->
+<!-- contact form ends -->
                 <!-- contact form ends -->
             </div>
             <div class="touchRight">

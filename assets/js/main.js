@@ -20,46 +20,59 @@ overlay.addEventListener("click", () => {
 
 
 // form validation
-const userForm = document.querySelector(".inTouch form")
-const nameInp = document.querySelector("#name")
-const nameInp2 = document.querySelector("#name2")
-const mailInp = document.querySelector("#mail")
-const phoneInp = document.querySelector("#phone")
-const messageInp = document.querySelector("#message")
-const nameWarn = document.querySelector(".nameWarn")
-const name2Warn = document.querySelector(".name2Warn")
-const mailWarn = document.querySelector(".mailWarn")
-const phoneWarn = document.querySelector(".phoneWarn")
-const messageWarn = document.querySelector(".messageWarn")
+// form validation
+const userForm = document.querySelector(".inTouch form");
+const nameInp = document.querySelector("#name");
+const nameInp2 = document.querySelector("#name2");
+const mailInp = document.querySelector("#mail");
+const phoneInp = document.querySelector("#phone");
+const messageInp = document.querySelector("#message");
+const nameWarn = document.querySelector(".nameWarn");
+const name2Warn = document.querySelector(".name2Warn");
+const mailWarn = document.querySelector(".mailWarn");
+const phoneWarn = document.querySelector(".phoneWarn");
+const messageWarn = document.querySelector(".messageWarn");
 
-
-userForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-    nameWarn.classList.remove("active")
-    mailWarn.classList.remove("active")
-    phoneWarn.classList.remove("active")
-    messageWarn.classList.remove("active")
-    let warnCount = 0
+userForm.addEventListener("submit", () => {
+    nameWarn.classList.remove("active");
+    mailWarn.classList.remove("active");
+    phoneWarn.classList.remove("active");
+    messageWarn.classList.remove("active");
+    let warnCount = 0;
     if (!nameInp.value) {
-        nameWarn.classList.add("active")
-        warnCount++
+        nameWarn.classList.add("active");
+        warnCount++;
     }
     if (!nameInp2.value) {
-        name2Warn.classList.add("active")
-        warnCount++
+        name2Warn.classList.add("active");
+        warnCount++;
     }
-    if (!messageWarn.value) {
-        messageWarn.classList.add("active")
-        warnCount++
+    if (!messageInp.value) {
+        messageWarn.classList.add("active");
+        warnCount++;
     }
     if (!mailInp.value) {
-        mailWarn.classList.add("active")
-        warnCount++
+        mailWarn.classList.add("active");
+        warnCount++;
     }
     if (!phoneInp.value) {
-        phoneWarn.classList.add("active")
-        warnCount++
+        phoneWarn.classList.add("active");
+        warnCount++;
     }
-})
+
+    if (warnCount === 0) {
+        // If there are no validation errors, allow the form to submit
+        return true;
+    } else {
+        // If there are validation errors, prevent the form from submitting
+        return false;
+    }
+});
+
+// Add the function for capturing the selected method of contact
+function captureSelectedMethod() {
+    const selectedMethod = document.querySelector('input[name="method"]:checked').value;
+    document.getElementById('selectedMethod').value = selectedMethod;
+}
 
 // form validation ends
