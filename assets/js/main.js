@@ -15,12 +15,11 @@ overlay.addEventListener("click", () => {
     overlay.classList.remove("active")
 })
 
-// menu resonsive ends
+// menu responsive ends
 
 
 
-// form validation
-// form validation
+// form validation beigns
 const userForm = document.querySelector(".inTouch form");
 const nameInp = document.querySelector("#name");
 const nameInp2 = document.querySelector("#name2");
@@ -76,3 +75,16 @@ function captureSelectedMethod() {
 }
 
 // form validation ends
+
+// Your existing JavaScript code...
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
