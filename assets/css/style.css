@@ -312,13 +312,22 @@ header .container .fa-bars {
     overflow: hidden; /* Hide overflowing content */
 }
 
+
 .singleService:hover .serviceText {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    height: auto; /* Remove fixed height to allow content to expand */
-    overflow-y: auto; /* Add this line to make the text scrollable if it exceeds the container height */
+    overflow-y: auto;
+    border-radius: 10px;
 }
+/* old borken way
+/*.singleService:hover .serviceText {
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: auto; /* Remove fixed height to allow content to expand */
+  /*  overflow-y: auto; /* Add this line to make the text scrollable if it exceeds the container height */
+/*}*/
 
 
 .singleService:hover .serviceText h3 {
