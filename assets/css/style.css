@@ -312,14 +312,13 @@ header .container .fa-bars {
     overflow: hidden; /* Hide overflowing content */
 }
 
-
 .singleService:hover .serviceText {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     overflow-y: auto;
     border-radius: 10px;
-}
+} 
 /* old borken way
 /*.singleService:hover .serviceText {
     top: 0;
