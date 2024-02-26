@@ -334,7 +334,7 @@ header .container .fa-bars {
 }
 
 h3 {
-    font-size: 30px; /* Adjust the font size as needed */
+    font-size: 31px; /* Adjust the font size as needed */
 }
 /* Update the styles for the service text container */
 .serviceText {
@@ -357,6 +357,10 @@ h3 {
     overflow-y: auto;
     border-radius: 10px;
 } 
+.singleService:hover .serviceText {
+    background-color: #fff; /* Change background color to white */
+    color: #000; /* Change text color to black */
+}
 /* new h3 code*/
 .serviceText {
     position: relative;
@@ -373,6 +377,7 @@ h3 {
 
 .serviceText p {
     display: none; /* Hide the paragraph text by default */
+    font-size: 20px;
 }
 
 .singleService:hover .serviceText p {
