@@ -332,6 +332,10 @@ header .container .fa-bars {
     place-items: center;
     margin-bottom: 15px;
 }
+
+h3 {
+    font-size: 30px; /* Adjust the font size as needed */
+}
 /* Update the styles for the service text container */
 .serviceText {
     width: 100%;
