@@ -353,23 +353,45 @@ header .container .fa-bars {
     overflow-y: auto;
     border-radius: 10px;
 } 
+/* new h3 code*/
+.serviceText {
+    position: relative;
+}
 
 .serviceText h3 {
     position: sticky;
     top: 0;
+    background-color: #000; /* Adjust background color as needed */
+    color: #fff; /* Adjust text color as needed */
+    padding: 15px; /* Adjust padding as needed */
+    z-index: 1; /* Ensure the h3 remains above the hover content */
+}
+
+.serviceText p {
+    display: none; /* Hide the paragraph text by default */
+}
+
+.singleService:hover .serviceText p {
+    display: block; /* Display the paragraph text on hover */
+}
+
+/*old code
+.serviceText h3 {
+    position: sticky;
+    top: 0;
     background-color: #ff00; /* Adjust the background color to match the serviceText background */
-    color: #232323;
+  /*  color: #232323;
     font-size: 24px;
     font-weight: 800;
     line-height: 34px;
     margin-bottom: 10px;
     transition: .3s;
     z-index: 1; /* Ensure the h3 remains above the hover content */
-}
+/*}*/
 
-.serviceText p {
+/*.serviceText p {
     margin-top: 60px; /* Adjust the margin to create space below the h3 */
-}
+/*}
 /* services section styles ends */
 
 
