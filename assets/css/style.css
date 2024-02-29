@@ -306,6 +306,7 @@ header .container .fa-bars {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .singleService {
@@ -356,9 +357,10 @@ h3 {
     color: #fff;
     overflow-y: auto;
     border-radius: 10px;
+    width: 100%;
 } 
 .singleService:hover .serviceText {
-    background-color: #fff; /* Change background color to white */
+    background-color: #cfcacae8; /* Change background color to white */
     color: #000; /* Change text color to black */
 }
 /* new h3 code*/
