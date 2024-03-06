@@ -651,9 +651,20 @@ h3 {
 }
 .touchRight p {
     font-size: 15px;
-    font-weight: 300;
-    line-height: 27px;
-    color: #666666;
+    font-weight: bold;
+    line-height: 28px; /* Adjust line height for increased spacing between lines */
+    color: #000000;
+    margin-bottom: 15px; /* Increase the margin at the bottom of paragraphs for more spacing */
+    max-width: 75%; /* Set a maximum width for the paragraphs to make them more narrow */
+    /*text-align: center;*/
+}
+
+.touchRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+   /* text-align: center; /* Center align the text within the container */
 }
 /* contact us section styles ends */
 
