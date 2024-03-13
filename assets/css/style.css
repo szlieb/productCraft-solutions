@@ -386,19 +386,6 @@ h3 {
     display: block; /* Display the paragraph text on hover */
 }
 
-/*old code
-.serviceText h3 {
-    position: sticky;
-    top: 0;
-    background-color: #ff00; /* Adjust the background color to match the serviceText background */
-  /*  color: #232323;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 34px;
-    margin-bottom: 10px;
-    transition: .3s;
-    z-index: 1; /* Ensure the h3 remains above the hover content */
-/*}*/
 
 /*.serviceText p {
     margin-top: 60px; /* Adjust the margin to create space below the h3 */
