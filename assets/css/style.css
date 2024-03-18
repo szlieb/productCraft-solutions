@@ -38,6 +38,14 @@ button:hover {
     margin: 0 auto;
     padding: 10px 15px;
 }
+
+p {
+    text-align: justify; /* Justify text to create even line breaks */
+    text-justify: inter-word; /* Specify inter-word justification for better spacing */
+    word-wrap: break-word; /* Allow long words to break and wrap within the container */
+    overflow-wrap: break-word; /* Ensure that long words break at the end of the line */
+    hyphens: auto; /* Enable hyphenation to improve line breaks */
+}
 /* common styles ends */
 
 
@@ -281,9 +289,6 @@ header .container .fa-bars {
 }
 /* why choose us section styles ends */
 
-
-
-
 /* services section styles */
 .services {
     padding: 140px 70px;
@@ -300,18 +305,16 @@ header .container .fa-bars {
     color: #232323;
 }
 
-
 .serviceWrap {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .singleService {
-    width: 400px; /* Change the fixed width to a maximum width */
-    min-height: 230px; /* Change height to min-height to allow for expansion */
+    width: 400px;
+    min-height: 230px;
     padding: 5px 15px;
     display: flex;
     flex-direction: column;
@@ -322,6 +325,11 @@ header .container .fa-bars {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.singleService:hover {
+    transform: scale(1.1);
 }
 
 .singleService .serviceImg {
@@ -335,20 +343,20 @@ header .container .fa-bars {
 }
 
 h3 {
-    font-size: 31px; /* Adjust the font size as needed */
+    font-size: 31px;
 }
-/* Update the styles for the service text container */
+
 .serviceText {
     width: 100%;
-    padding: 15px; /* Adjust padding as needed */
+    padding: 15px;
     position: absolute;
-    top: 135px; /* Adjust the top position to keep the h3 fixed */
+    top: 135px;
     left: 0;
     transition: .3s;
     background-color: #ff00;
-    box-sizing: border-box; /* Include padding in the width and height calculations */
-    overflow: hidden; /* Hide overflowing content */
-    max-height: 200px; /* Set a maximum height for the service text */
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 200px;
 }
 
 .singleService:hover .serviceText {
@@ -357,13 +365,15 @@ h3 {
     color: #fff;
     overflow-y: auto;
     border-radius: 10px;
-    width: 100%;
-} 
-.singleService:hover .serviceText {
-    background-color: #cfcacae8; /* Change background color to white */
-    color: #000; /* Change text color to black */
+    width: 100%; /* Keep the width at 100% */
+    left: 0%; /* Keep the left position at 0% */
+   padding: 15px 30px 30px 30px; /* Increase bottom padding */
+   display: flex; /* Use Flexbox to center the text */
+   text-align: left; /* Center the text */
 }
-/* new h3 code*/
+
+
+
 .serviceText {
     position: relative;
 }
@@ -371,26 +381,25 @@ h3 {
 .serviceText h3 {
     position: sticky;
     top: 0;
-    background-color: #000; /* Adjust background color as needed */
-    color: #fff; /* Adjust text color as needed */
-    padding: 15px; /* Adjust padding as needed */
-    z-index: 1; /* Ensure the h3 remains above the hover content */
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    z-index: 1;
 }
 
 .serviceText p {
-    display: none; /* Hide the paragraph text by default */
-    font-size: 20px;
+    display: none;
+    font-size: 18px;
 }
 
 .singleService:hover .serviceText p {
-    display: block; /* Display the paragraph text on hover */
+    display: block;
 }
-
-
-/*.serviceText p {
-    margin-top: 60px; /* Adjust the margin to create space below the h3 */
-/*}
 /* services section styles ends */
+
+
+
+
 
 
 
@@ -561,9 +570,6 @@ h3 {
 .touchLeft form .touchInpRow small.active {
     display: block;
 }
-
-
-
 
 .contentMethod {
     margin-bottom: 20px;
