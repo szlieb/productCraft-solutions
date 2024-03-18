@@ -1,9 +1,7 @@
 /* font import */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880");
 /* font import ends */
-
-
 
 /* common styles */
 * {
@@ -11,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 body {
     scroll-behavior: smooth;
@@ -25,9 +23,9 @@ a {
 }
 
 button {
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     background-color: #06498F;
 }
 button:hover {
@@ -48,8 +46,6 @@ p {
 }
 /* common styles ends */
 
-
-
 /* overlay styles */
 .overlay {
     width: 100vw;
@@ -60,10 +56,9 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 /* overlay styles ends */
-
 
 /*mobile responsive formatting begin*/
 
@@ -88,7 +83,10 @@ p {
 
 /* Center headings and strong elements on mobile view */
 @media (max-width: 767px) {
-    h1, h2, h3, strong {
+    h1,
+    h2,
+    h3,
+    strong {
         text-align: center;
     }
 }
@@ -100,7 +98,6 @@ p {
 }
 /*mobile responsive formatting end*/
 
-
 /* header section styles */
 header {
     background-color: #141414;
@@ -111,7 +108,6 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
-
 
 header .container ul {
     display: flex;
@@ -125,13 +121,13 @@ header .container ul li {
 
 header .container ul li a {
     font-size: 28px;
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     font-weight: 400;
     color: #fff;
-    transition: .3s;
+    transition: 0.3s;
 }
 header .container ul li a:hover {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
 }
 header .container .fa-bars {
     font-size: 25px;
@@ -139,9 +135,6 @@ header .container .fa-bars {
     display: none;
 }
 /* header section styles ends */
-
-
-
 
 /* banner section styles */
 #banner {
@@ -172,7 +165,6 @@ header .container .fa-bars {
     margin-bottom: 30px;
 }
 
-
 #banner button {
     width: 188px;
     height: 64px;
@@ -185,9 +177,6 @@ header .container .fa-bars {
     margin: 0 auto;
 }
 /* banner section styles ends */
-
-
-
 
 /* about us section styles */
 .about {
@@ -238,9 +227,6 @@ header .container .fa-bars {
 }
 /* about us section styles ends */
 
-
-
-
 /* why choose us section styles */
 .choose {
     padding: 140px 90px;
@@ -278,7 +264,6 @@ header .container .fa-bars {
     margin-bottom: 30px;
     color: #fff;
 }
-
 
 .chooseRight {
     width: 50%;
@@ -352,7 +337,7 @@ h3 {
     position: absolute;
     top: 135px;
     left: 0;
-    transition: .3s;
+    transition: 0.3s;
     background-color: #ff00;
     box-sizing: border-box;
     overflow: hidden;
@@ -367,12 +352,10 @@ h3 {
     border-radius: 10px;
     width: 100%; /* Keep the width at 100% */
     left: 0%; /* Keep the left position at 0% */
-   padding: 15px 30px 30px 30px; /* Increase bottom padding */
-   display: flex; /* Use Flexbox to center the text */
-   text-align: left; /* Center the text */
+    padding: 15px 30px 30px 30px; /* Increase bottom padding */
+    display: flex; /* Use Flexbox to center the text */
+    text-align: left; /* Center the text */
 }
-
-
 
 .serviceText {
     position: relative;
@@ -396,14 +379,6 @@ h3 {
     display: block;
 }
 /* services section styles ends */
-
-
-
-
-
-
-
-
 
 /* what we offer section styles */
 .offer {
@@ -450,10 +425,6 @@ h3 {
 }
 /* what we offer section styles ends */
 
-
-
-
-
 /* contact us section styles */
 .inTouch {
     padding: 140px 70px;
@@ -469,12 +440,11 @@ h3 {
     padding-right: 10px;
 }
 
-
 .touchLeft h2 {
     font-size: 66px;
     font-weight: 900;
     line-height: 76px;
-    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: "Gilroy-Heavy", sans-serif;
     color: #232323;
     margin-bottom: 25px;
 }
@@ -486,7 +456,7 @@ h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 31px;
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     color: #232323;
     margin-bottom: 30px;
 }
@@ -516,7 +486,7 @@ h3 {
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     color: #232323;
     display: block;
     position: relative;
@@ -530,11 +500,11 @@ h3 {
     width: 100%;
     height: 52px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 12px 16px;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     box-shadow: 0px 1px 2px 0px #1018280D;
     background-color: #f4f4f5;
 }
@@ -550,11 +520,11 @@ h3 {
     width: 100%;
     height: 120px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 12px 16px;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     box-shadow: 0px 1px 2px 0px #1018280D;
     background-color: #f4f4f5;
 }
@@ -578,7 +548,7 @@ h3 {
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     color: #232323;
     margin-bottom: 15px;
 }
@@ -607,9 +577,8 @@ h3 {
     font-weight: 400;
     line-height: 28px;
     color: #666666;
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
 }
-
 
 .contentCaptcha {
     width: 250px;
@@ -617,7 +586,6 @@ h3 {
     border: 1.5px solid #141414;
     margin-bottom: 30px;
 }
-
 
 .touchLeft form .touchBtn {
     width: 307px;
@@ -629,7 +597,6 @@ h3 {
     font-weight: 400;
 }
 
-
 .touchRight {
     width: 50%;
     padding-left: 10px;
@@ -638,7 +605,7 @@ h3 {
     font-size: 35px;
     font-weight: 600;
     line-height: 43px;
-    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: "Gilroy-Medium", sans-serif;
     color: #06498F;
     margin-bottom: 20px;
 }
@@ -657,13 +624,9 @@ h3 {
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
-   /* text-align: center; /* Center align the text within the container */
+    /* text-align: center; /* Center align the text within the container */
 }
 /* contact us section styles ends */
-
-
-
-
 
 /* footer section styles */
 footer {
@@ -676,7 +639,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1.5px solid rgba(255, 255, 255, .5);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
 }
 
 .footerTop ul {
@@ -689,12 +652,12 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    font-family: 'Gilroy-Regular', sans-serif;
+    font-family: "Gilroy-Regular", sans-serif;
     color: #fff;
-    transition: .3s;
+    transition: 0.3s;
 }
 .footerTop ul li a:hover {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footerSocial {
@@ -709,17 +672,15 @@ footer {
     display: grid;
     place-items: center;
     margin-left: 10px;
-    transition: .3s;
+    transition: 0.3s;
 }
 .footerSocial a:hover {
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 .footerSocial a i {
     font-size: 12px;
     color: #06498F;
 }
-
-
 
 .footerBottom {
     padding: 25px 0;
@@ -733,17 +694,12 @@ footer {
 }
 /* footer section styles ends */
 
-
-
-
-
 /* responsive starts */
 @media (max-width: 1380px) {
     .serviceWrap {
         justify-content: center;
     }
 }
-
 
 @media (max-width: 1300px) {
     .footerTop ul {
@@ -754,8 +710,6 @@ footer {
         margin: 10px 0;
     }
 }
-
-
 
 @media (max-width: 1000px) {
     .container {
@@ -779,7 +733,6 @@ footer {
         font-size: 16px;
     }
 
-
     .about .container {
         flex-direction: column;
     }
@@ -795,14 +748,12 @@ footer {
         font-size: 55px;
     }
 
-
     .aboutRight p {
         font-size: 18px;
     }
     .aboutRight button {
         font-size: 16px;
     }
-
 
     .choose .container {
         flex-direction: column;
@@ -824,7 +775,6 @@ footer {
         padding: 0;
     }
 
-
     .services h2 {
         font-size: 50px;
     }
@@ -835,7 +785,6 @@ footer {
     .serviceText h3 {
         font-size: 20px;
     }
-
 
     .offer .container {
         flex-direction: column;
@@ -855,7 +804,6 @@ footer {
     .offerRight p {
         font-size: 18px;
     }
-
 
     .inTouch .container {
         flex-direction: column-reverse;
@@ -882,8 +830,6 @@ footer {
         margin-bottom: 25px;
     }
 
-
-
     .footerTop .footerLogo {
         width: 140px;
     }
@@ -891,10 +837,6 @@ footer {
         font-size: 15px;
     }
 }
-
-
-
-
 
 @media (max-width: 800px) {
     .container {
@@ -911,7 +853,7 @@ footer {
         width: 290px;
         height: 100vh;
         position: fixed;
-        transition: .3s;
+        transition: 0.3s;
         left: -310px;
         top: 0;
         background-color: #232323;
@@ -927,14 +869,18 @@ footer {
         margin-left: 0;
         margin-bottom: 30px;
     }
-    #banner, .about, .choose, .offer {
+    #banner,
+    .about,
+    .choose,
+    .offer {
         padding: 80px 40px;
     }
     #banner h1 {
         font-size: 60px;
     }
 
-    .services, .inTouch {
+    .services,
+    .inTouch {
         padding: 80px 30px;
     }
 
@@ -946,10 +892,6 @@ footer {
         padding: 0 30px;
     }
 }
-
-
-
-
 
 @media (max-width: 650px) {
     .footerTop {
@@ -963,10 +905,13 @@ footer {
     }
 }
 
-
-
 @media (max-width: 500px) {
-    #banner, .about, .choose, .offer, .services, .inTouch {
+    #banner,
+    .about,
+    .choose,
+    .offer,
+    .services,
+    .inTouch {
         padding: 60px 15px;
     }
     #banner h1 {
@@ -974,7 +919,10 @@ footer {
         line-height: 60px;
     }
 
-    .aboutRight h2, .chooseLeft h2, .offerRight h2, .touchLeft h2 {
+    .aboutRight h2,
+    .chooseLeft h2,
+    .offerRight h2,
+    .touchLeft h2 {
         font-size: 48px;
     }
 
@@ -1000,8 +948,6 @@ footer {
         font-size: 28px;
     }
 }
-
-
 
 @media (max-width: 400px) {
     #banner h1 {
